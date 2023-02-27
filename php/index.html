@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя работа</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-div wrapper__header">
+            <img src="../img/poli.png" alt="Логотип" class="logo">
+            <span class="text-header__position">Домашняя работа: Feedback Form</span>
+        </div>
+    </header>
+    <main class="wrapper__main">
+        <h1 class="hidden">PHP</h1>
+        <form action="https://httpbin.org/post" method="post" class="form">
+            <label class="flex__flex-direction label--margin">
+                <span>Имя пользователя</span>
+                <input type="text" name="name" placeholder="Artem" autocomplete="off">
+            </label>
+            <label class="flex__flex-direction label--margin">
+                <span>Your email</span>
+                <input type="email" name="email" placeholder="example@bk.com" autocomplete="off">
+            </label>
+            <label class="flex__flex-direction label--margin">
+                <span>Тип сообщения</span>
+                <select class="" name="type">
+                    <option value="Сomplaint">Жалоба</option>
+                    <option value="Suggestion">Предложение</option>
+                    <option value="Gratitude" selected>Благодарность</option>
+                </select>
+            </label>
+            <fieldset class="flex__flex-direction label--margin">
+                <legend>Вариант ответа</legend>
+                <label>
+                    <input type="checkbox" name="sending" value="e-mail">
+                    <span>E-mail</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="sending" value="sms">
+                    <span>СMC</span>
+                </label>
+            </fieldset>
+            <button type="submit" class="form__button">Отправить</button>
+        </form>
+        <p class="a__p"><a href="./lab_2.php" class="a">Вторая страница</a></p>
+    </main>
+    <footer>
+        <div class="wrapper__footer">
+            <p class="footer__text">Изучаем PHP</p>
+        </div>
+    </footer>
+</body>
+
+</html>
